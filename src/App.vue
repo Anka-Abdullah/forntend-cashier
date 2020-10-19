@@ -12,4 +12,17 @@
   text-align: center;
   color: #2c3e50;
 }
+button {
+    border: none;
+    background: none;
+}
+button.active.focus, button.active:focus,
+button.focus, button:active.focus,
+button:active:focus, button:focus {
+  outline: none;
+  box-shadow: none;
+}
+#cartnav{
+  width: 380px;
+}
 </style>
