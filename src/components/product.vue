@@ -1,32 +1,33 @@
 <template>
     <div>
-        <div class="sidenav shadow">
-            <button>
-                <router-link to="/history">
-                <img src="../assets/icon/clipboard.png" width="30">
-                </router-link>
-            </button>
-            <button id="userbtn">
-                <router-link to="/cashier">
-                <img src="../assets/icon/add.user.png" width="30">
-                </router-link>
-            </button>
-            <button id="cartbtn">
-                <img src="../assets/icon/cart.png" width="30">
-            </button>
-            <button data-toggle="modal" data-target="#staticBackdrop2">
-                <img src="../assets/icon/add.png" width="30">
-            </button>
-            <button>
-                <img src="../assets/icon/logout.png" width="30">
-            </button>
+        <div class="col mb-4">
+            <div class="row">
+                <div class="card border border-0 mx-auto" style="width: 15rem;">
+                    <img src="../assets//ladybug-5508667_640.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="row">
+                            <div class="ml-auto">
+                                <button>
+                                    <img src="../assets/icon/delete.png" alt="">
+                                </button>
+                                <button data-toggle="modal" data-target="#staticBackdrop">
+                                    <img src="../assets/icon/edit.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Modal -->
-<div class="modal fade" id="staticBackdrop2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header border border-0">
-        <h4 class="modal-title" id="staticBackdropLabel"><strong>Add Product</strong></h4>
+        <h4 class="modal-title" id="staticBackdropLabel"><strong>Edit Product</strong></h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -63,28 +64,10 @@
       </div>
       <div class="modal-footer border border-0">
         <button type="button" style="background: #F24F8A;" class="btn text-white m-2" data-dismiss="modal">Cancel</button>
-        <button type="submit" style="background: #57CAD5;" @click="onSubmit" class="btn text-white m-2 px-4">Add</button>
+        <button type="submit" style="background: #57CAD5;" @click="onSubmit" class="btn text-white m-2 px-4">Edit</button>
       </div>
     </div>
   </div>
 </div>
     </div>
 </template>
-<style scoped>
-.sidenav {
-  height: 100%;
-  width: 60px;
-  position: fixed;
-  z-index: 1;
-  top: 50px;
-  left: 0;
-  background-color: rgb(236, 244, 247);
-  overflow-x: hidden;
-  padding-top: 15px;
-}
-
-.sidenav button {
-  padding: 30px 8px 6px 17px;
-}
-
-</style>
