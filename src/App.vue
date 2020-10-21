@@ -21,11 +21,19 @@ button:active:focus, button:focus {
   outline: none;
   box-shadow: none;
 }
+input:focus{
+    outline: none;
+}
 #navhome{
   height: 60px;
-  background-color: rgb(236, 244, 247);
 }
 #cartnav{
   width: 380px;
+}
+.card{
+  width: 85%;
+}
+.card-body{
+  height: 100px;
 }
 </style>

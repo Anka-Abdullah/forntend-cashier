@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="fixed-top">
-            <nav class="navbar navbar-light p-0 px-3 shadow" id="navhome">
+            <nav class="navbar bg-light p-0 px-3 shadow" id="navhome">
                 <button style="margin-left: 10px">
                     <router-link to="/">
                         <img src="../assets/icon//menu.png" width="25">
@@ -17,8 +17,8 @@
                 </button>
             </nav>
         </div>
-        <div class="container" style="margin-top: 160px;">
-            <div class="navbar px-2 py-4 mb-5 fixed-top bg-white" style="margin-top: 60px;">
+        <div class="container" style="margin-top: 80px;">
+            <div class="navbar px-2 py-4 mb-2">
                 <div class="row mx-auto my-auto">
                     <form action="" class="border rounded-pill p-2 shadow-sm">
                         <input type="text" class="border border-0">
