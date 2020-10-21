@@ -2,7 +2,7 @@
     <div>
         <div class="col mb-5">
             <div class="row">
-                <div class="card border border-0 mx-auto shadow">
+                <div class="card border border-0 mx-auto shadow" id="item">
                     <img src="../assets//ladybug-5508667_640.jpg" class="card-img-top">
                     <div class="card-body p-2 col">
                       <div class="my-auto">
@@ -72,3 +72,8 @@
 </div>
     </div>
 </template>
+<style scoped>
+.card-body{
+  height: 100px;
+}
+</style>

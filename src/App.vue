@@ -30,10 +30,17 @@ input:focus{
 #cartnav{
   width: 380px;
 }
-.card{
+#item{
   width: 85%;
 }
-.card-body{
-  height: 100px;
+#board {
+  margin: 35px 20px;
+  width: 30%;
+  height: 190px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  background-color: aqua;
 }
 </style>
