@@ -28,7 +28,7 @@
                         <form action="" method="post">
                             <div class="form-group">
                                 <label for="name">Name :</label>
-                                <input type="text" class="form-control" id="name">
+                                <input type="text" class="form-control" id="name" pattern="[A-Za-z]{}">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email :</label>
@@ -38,7 +38,7 @@
                                 <label for="status">Status</label>
                                 <select id="inputState" class="form-control">
                                     <option selected>Choose...</option>
-                                    <option value="cashier">Cashier</option>
+                                    <option value="user">Cashier</option>
                                     <option value="admin">Admin</option>
                                 </select>
                             </div>

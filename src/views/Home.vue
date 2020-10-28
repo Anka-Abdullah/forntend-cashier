@@ -1,6 +1,16 @@
 <template>
   <div class="home">
-    <navbar/>
+    <div class="fixed-top">
+<nav class="navbar navbar-light p-0 shadow-sm bg-white" id="navhome">
+    <button style="margin-left: 10px">
+<img src="../assets/icon//menu.png" width="25">
+    </button>
+  <span class="navbar-brand mb-0 h1 mx-auto"><h4 class="m-0">Food Items</h4></span>
+  <nav class="navbar navbar-light p-0" id="cartnav">
+  <span class="navbar-brand mb-0 h1 mx-auto"><h4 class="m-0">Cart</h4></span>
+</nav>
+</nav>
+</div>
     <div class="container-fluid bg-light" style="margin-top: 42px;">
       <div class="row">
         <div class="col-auto">
@@ -23,14 +33,12 @@
 </template>
 
 <script>
-import navbar from '../components/navhome'
 import sidebar from '../components/sidebar'
 import product from '../components/product'
 import cart from '../components/cart'
 export default {
   name: 'Home',
   components: {
-    navbar,
     sidebar,
     product,
     cart

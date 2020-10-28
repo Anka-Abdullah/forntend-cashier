@@ -58,7 +58,7 @@
                         <form action="" method="post">
                             <div class="form-group">
                                 <label for="name">Name :</label>
-                                <input type="text" class="form-control" id="name">
+                                <input type="text" class="form-control" id="name" placeholder="Input is only alphabetic" pattern="[A-Za-z]{}">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email :</label>

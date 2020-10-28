@@ -38,17 +38,20 @@
                      <div class="form-group row">
            <label class="col-3"><h5>Name</h5></label>
            <div class="col">
-            <input type="text" class="form-control shadow" >
+            <input type="text" class="form-control shadow" placeholder="Input is only alphabetic" pattern="[A-Za-z]{}">
            </div>
           </div>
           <div class="form-group row">
            <label class="col-3"><h5>Image</h5></label>
+           <div class="col">
             <input type="file" class="col form-control-file">
+            <p class="m-0 ml-3">.jpeg .jpg .png</p>
+           </div>
           </div>
           <div class="form-group row">
            <label class="col-3"><h5>Price</h5></label>
            <div class="col">
-            <input type="number" class="col form-control w-75 shadow">
+            <input type="number" class="col form-control w-75 shadow" placeholder="input x 1000">
            </div>
           </div>
           <div class="form-group row">
