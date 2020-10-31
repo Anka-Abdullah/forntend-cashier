@@ -5,12 +5,6 @@
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
 button {
     border: none;
     background: none;
@@ -24,12 +18,20 @@ button:active:focus, button:focus {
 input:focus{
     outline: none;
 }
+i{
+  color: #000;
+}
+i:hover{
+  color: #57CAD5 !important;
+}
 #navhome{
   height: 60px;
 }
 #cartnav{
   width: 380px;
+  height: 60px;
 }
+
 #item{
   width: 85%;
 }

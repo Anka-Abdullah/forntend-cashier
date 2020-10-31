@@ -1,24 +1,24 @@
 <template>
     <div>
-        <div class="sidenav shadow bg-white">
-            <button>
+        <div class="sidenav shadow bg-white" style="font-size: 32px;">
+            <button class="m-0">
                 <router-link to="/history">
-                <img src="../assets/icon/clipboard.png" width="30">
+                <i class="lni lni-bar-chart"></i>
                 </router-link>
             </button>
             <button id="userbtn">
                 <router-link to="/cashier">
-                <img src="../assets/icon/add.user.png" width="30">
+                <i class="lni lni-users"></i>
                 </router-link>
             </button>
             <button id="cartbtn">
-                <img src="../assets/icon/cart.png" width="30">
+                <i class="lni lni-cart"></i>
             </button>
             <button data-toggle="modal" data-target="#staticBackdrop2">
-                <img src="../assets/icon/add.png" width="30">
+                <i class="lni lni-circle-plus" style="color: rgb(108, 179, 2);"></i>
             </button>
-            <button>
-                <img src="../assets/icon/logout.png" width="30">
+            <button data-toggle="modal" data-target="#logout">
+                <i class="lni lni-power-switch" style="color:rgb(99, 1, 1);"></i>
             </button>
         </div>
         <!-- Modal -->
@@ -33,7 +33,7 @@
       </div>
       <div class="modal-body">
           <form action="" enctype="multipart/form-data" method="post">
-                     <div class="form-group row">
+            <div class="form-group row">
            <label class="col-3"><h5>Name</h5></label>
            <div class="col">
             <input type="text" class="form-control shadow" placeholder="Input is only alphabetic" pattern="[A-Za-z]{}">
@@ -43,7 +43,7 @@
            <label class="col-3"><h5>Image</h5></label>
            <div class="col">
             <input type="file" class="col form-control-file">
-            <p class="m-0 ml-3">.jpeg .jpg .png</p>
+            <p class="m-0 ml-3">.jpeg .jpg .png max 1mb </p>
            </div>
           </div>
           <div class="form-group row">
@@ -57,8 +57,8 @@
            <div class="col">
             <select class="custom-select w-50 shadow">
               <option value="">...</option>
-            <option value="food">Food</option>
-             <option value="drink">Drink</option>
+            <option value="1">Food</option>
+             <option value="2">Drink</option>
             </select>
            </div>
           </div>
@@ -71,8 +71,17 @@
     </div>
   </div>
 </div>
+<confirm :modalId="'logout'" :yes="'Logout'" :quetion="'Do you want to Sign Out ?'"/>
     </div>
 </template>
+<script>
+import confirm from '../../../components/global/confirm'
+export default {
+  components: {
+    confirm
+  }
+}
+</script>
 <style scoped>
 .sidenav {
   height: 100%;
@@ -86,7 +95,7 @@
 }
 
 .sidenav button {
-  padding: 30px 8px 6px 17px;
+  padding: 20px 8px 6px 16px;
 }
 
 </style>

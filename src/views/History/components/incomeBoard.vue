@@ -1,19 +1,5 @@
- <template>
-     <div class="history">
-         <nav class="navbar bg-light p-0 px-3 shadow" id="navhome">
-             <button style="margin-left: 10px">
-                 <router-link to="/">
-                     <img src="../assets/icon//menu.png" width="25">
-                 </router-link>
-             </button>
-             <span class="navbar-brand mb-0 h1">History</span>
-             <button class="mr-2">
-                 <router-link to="/cashier">
-                     <img src="../assets/icon/add.user.png" width="30">
-                 </router-link>
-             </button>
-         </nav>
-         <div class="container-fluid p-5">
+<template>
+    <div>
              <div class="row row-cols-1 row-cols-md-3">
                  <div class="col mb-4">
                      <div class="card py-4" id="board1">
@@ -43,43 +29,8 @@
                      </div>
                  </div>
              </div>
-             <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">INVOICES</th>
-      <th scope="col">CASHIER</th>
-      <th scope="col">DATE</th>
-      <th scope="col">ORDERS</th>
-      <th scope="col">AMOUNT</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>hjk</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-      <td>@mdo</td>
-    </tr>
-  </tbody>
-</table>
-         </div>
-     </div>
- </template>
+    </div>
+</template>
 <style scoped>
 #board1 {
 border: none;

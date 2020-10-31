@@ -1,33 +1,17 @@
 <template>
-    <div>
-        <div class="fixed-top">
-            <nav class="navbar bg-light p-0 px-3 shadow" id="navhome">
-                <button style="margin-left: 10px">
-                    <router-link to="/">
-                        <img src="../assets/icon//menu.png" width="25">
-                    </router-link>
-                </button>
-                <span class="navbar-brand mb-0 h1 mx-auto">
-                    <h4 class="m-0">cashier list</h4>
-                </span>
-                <button class="mr-2">
-                    <router-link to="/history">
-                        <img src="../assets/icon/clipboard.png" width="30">
-                    </router-link>
-                </button>
-            </nav>
-        </div>
-        <div class="container" style="margin-top: 80px;">
+    <div class="bg-light">
+        <navbar :link="'/'" :icon="'lni lni-menu'" :title="'Cashier'" :linkB="'/history'" :iconB="'lni lni-bar-chart'"/>
+        <div class="container pt-3" style="margin-top: 60px;">
             <div class="navbar px-2 py-4 mb-2">
                 <div class="row mx-auto my-auto">
                     <form action="" class="border rounded-pill p-2 shadow-sm">
-                        <input type="text" class="border border-0">
+                        <input type="text" class="border border-0" style="background: none;">
                         <button class="mr-2">
-                            <img src="../assets/icon/magnifying-glass.png" width="20">
+                            <i class="lni lni-search-alt"></i>
                         </button>
                     </form>
-                    <button class="ml-4" data-toggle="modal" data-target="#staticBackdrop4">
-                        <img src="../assets/icon/add.png" width="30">
+                    <button class="ml-3" data-toggle="modal" data-target="#staticBackdrop4">
+                        <i class="lni lni-circle-plus" style="color: rgb(108, 179, 2); font-size: 35px;"></i>
                     </button>
                 </div>
             </div>
@@ -86,9 +70,11 @@
     </div>
 </template>
 <script>
-import cashier from '../components/cashiercard'
+import navbar from '../../components/global/navbar'
+import cashier from './components/cashiercard'
 export default {
   components: {
+    navbar,
     cashier
   }
 }

@@ -3,7 +3,7 @@
         <div class="col mb-5">
             <div class="row">
                 <div class="card border border-0 mx-auto shadow" id="item">
-                    <img src="../assets//ladybug-5508667_640.jpg" class="card-img-top">
+                    <img src="../../../assets/ladybug-5508667_640.jpg" class="card-img-top">
                     <div class="card-body p-2 col">
                       <div class="my-auto">
                         <h5 class="card-title">Card title - product name web app</h5>
@@ -12,11 +12,11 @@
                     </div>
                         <div class="card-footer bg-white row m-0 p-0 border border-0">
                             <div class="ml-auto">
-                                <button>
-                                    <img src="../assets/icon/delete.png" alt="">
+                                <button data-toggle="modal" data-target="#delete">
+                                    <i class="lni lni-trash"></i>
                                 </button>
                                 <button data-toggle="modal" data-target="#staticBackdrop">
-                                    <img src="../assets/icon/edit.png" alt="">
+                                    <i class="lni lni-pencil"></i>
                                 </button>
                             </div>
                         </div>
@@ -73,8 +73,17 @@
     </div>
   </div>
 </div>
+<confirm :modalId="'delete'" :yes="'Delete'" :quetion="'Delete this product ?'"/>
     </div>
 </template>
+<script>
+import confirm from '../../../components/global/confirm'
+export default {
+  components: {
+    confirm
+  }
+}
+</script>
 <style scoped>
 .card-body{
   height: 100px;

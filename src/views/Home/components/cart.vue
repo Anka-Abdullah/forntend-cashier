@@ -3,7 +3,7 @@
     <div id="cartbox" class="p-3 bg-white">
         <!-- item -->
         <div class="navbar">
-            <img src="../assets//ladybug-5508667_640.jpg" width="65">
+            <img src="../../../assets/ladybug-5508667_640.jpg" width="65">
             <div class="col">
                 <h6>Product Name</h6>
                 <div id="count">
@@ -23,9 +23,30 @@
         </div>
         <h6 class="ml-auto mb-auto"><strong>Rp1.000.000,-</strong></h6>
     </div>
-    <button class="btn btn-block mt-3 text-white" style="background: #F24F8A;">Checkout</button>
+    <button class="btn btn-block mt-3 text-white" style="background: #F24F8A;" data-toggle="modal" data-target="#staticBackdrop8">Checkout</button>
     <button class="btn btn-block mt-2 text-white" style="background: #57CAD5;">Cancel</button>
     </div>
+        <!-- Modal -->
+<div class="modal fade" id="staticBackdrop8" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border border-0">
+        <h4 class="modal-title" id="staticBackdropLabel"><strong>Checkout</strong></h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          ...
+      </div>
+      <div class="modal-footer border border-0">
+        <button type="button" style="background: #F24F8A;" class="btn text-white mx-3 btn-block" data-dismiss="modal"><h5 class="m-0">print</h5></button>
+            <h5 class="mx-auto m-0">Or</h5>
+        <button type="submit" style="background: #57CAD5;" class="btn text-white mx-3 btn-block"><h5 class="m-0">send email</h5 ></button>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 </template>
 <style scoped>

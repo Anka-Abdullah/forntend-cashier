@@ -1,15 +1,15 @@
 <template>
     <div>
   <div class="navbar border mb-4 px-3 mx-5">
-      <img src="../assets/icon/add.user.png" width="40" class="mr-4 rounded-circle">
+      <i class="lni lni-user mr-4" style="font-size: 20px;"></i>
       <h6 class="my-auto mr-auto">Habib Eminem Al-kariim</h6>
       <div class="ml-auto">
           <span class="badge badge-success mr-4 p-2">Admin</span>
-    <button>
-        <img src="../assets/icon/delete.png" alt="">
+    <button data-toggle="modal" data-target="#cashier">
+        <i class="lni lni-trash"></i>
     </button>
     <button data-toggle="modal" data-target="#staticBackdrop5">
-        <img src="../assets/icon/edit.png" alt="">
+        <i class="lni lni-pencil"></i>
     </button>
 </div>
   </div>
@@ -45,7 +45,7 @@
                         </form>
                     </div>
                     <div class="modal-footer border border-0">
-                        <button type="button" style="background: #F24F8A;" class="btn text-white m-2"
+                        <button style="background: #F24F8A;" class="btn text-white m-2"
                             data-dismiss="modal">Cancel</button>
                         <button type="submit" style="background: #57CAD5;"
                             class="btn text-white m-2 px-4">Edit</button>
@@ -53,5 +53,14 @@
                 </div>
             </div>
         </div>
+        <confirm :modalId="'cashier'" :yes="'Delete'" :quetion="'Delete this account ?'"/>
     </div>
 </template>
+<script>
+import confirm from '../../../components/global/confirm'
+export default {
+  components: {
+    confirm
+  }
+}
+</script>
