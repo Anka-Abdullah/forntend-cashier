@@ -28,15 +28,15 @@
                         <form action="" method="post">
                             <div class="form-group">
                                 <label for="name">Name :</label>
-                                <input type="text" class="form-control" id="name" pattern="[A-Za-z]{}">
+                                <input type="text" class="form-control" pattern="[A-Za-z]{}">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email :</label>
-                                <input type="text" class="form-control" id="email">
+                                <input type="text" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="status">Status</label>
-                                <select id="inputState" class="form-control">
+                                <select class="form-control">
                                     <option selected>Choose...</option>
                                     <option value="user">Cashier</option>
                                     <option value="admin">Admin</option>

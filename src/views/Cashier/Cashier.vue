@@ -61,7 +61,7 @@
                     <div class="modal-footer border border-0">
                         <button type="button" style="background: #F24F8A;" class="btn text-white m-2"
                             data-dismiss="modal">Cancel</button>
-                        <button type="submit" style="background: #57CAD5;" @click="onSubmit"
+                        <button type="submit" style="background: #57CAD5;"
                             class="btn text-white m-2 px-4">Add</button>
                     </div>
                 </div>

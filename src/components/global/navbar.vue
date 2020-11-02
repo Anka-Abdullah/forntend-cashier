@@ -1,22 +1,27 @@
 <template>
     <div class="fixed-top" :style="width">
         <nav class="navbar bg-white p-0 px-2 shadow-sm" id="navhome">
-             <button>
-                 <router-link :to="link" >
+             <a :href="link">
                      <i :class="icon" style="font-size: 30px;"></i>
-                 </router-link>
-             </button>
+             </a>
              <h3 class="mx-auto m-0">{{ title }}</h3>
-             <button class="mr-2">
-                 <router-link :to="linkB">
+             <a :href="linkB" class="mr-2">
                      <i :class="iconB" style="font-size: 30px;"></i>
-                 </router-link>
-             </button>
+             </a>
          </nav>
     </div>
 </template>
 <script>
 export default {
-  props: ['width', 'link', 'icon', 'title', 'linkB', 'iconB', 'additional']
+  props: ['width', 'link', 'icon', 'title', 'linkB', 'iconB']
+  //   props: {
+  //     width: String,
+  //     link: String,
+  //     icon: String,
+  //     title: String,
+  //     linkB: String,
+  //     iconB: String
+
+//   }
 }
 </script>

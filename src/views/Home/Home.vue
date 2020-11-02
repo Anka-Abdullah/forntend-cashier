@@ -3,7 +3,7 @@
     <div class="container-fluid bg-light">
       <nav class="navbar p-0 m-0">
           <navbar :width="'width: calc(100% - 380px);'"
-                  :link="'/'"
+                  :link="{name: 'Home'}"
                   :icon="'lni lni-menu'"
                   :title="'Food Items'"
                   :titleB="'Cart'" />

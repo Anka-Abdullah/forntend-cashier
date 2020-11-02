@@ -29,13 +29,26 @@
     </div>
 </template>
 <script>
+// import axios from 'axios'
 import modal from '../../../components/global/modal-product'
 import confirm from '../../../components/global/confirm'
 export default {
   components: {
     modal,
     confirm
+  },
+  data () {
+    return {
+      products: []
+    }
   }
+  // methods: {
+  //   getData () {
+  //     axios.get('https://jsonplaceholder.typicode.com/photos').then((res) => {
+  //       console.log(res.data)
+  //     })
+  //   }
+  // }
 }
 </script>
 <style scoped>
