@@ -1,7 +1,7 @@
 <template>
     <div>
     <div class="modal fade" :id="modalId" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header border border-0">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -18,7 +18,6 @@
     </div>
   </div>
 </div>
-<confirm :modalId="'delete'" :quetion="'do you want to sign out?'"/>
     </div>
 </template>
 <script>

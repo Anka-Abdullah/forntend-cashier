@@ -1,49 +1,97 @@
 <template>
-    <div class="container-fluid p-0 bg-dark" style="position: fixed;">
-      <div class="container-fluid" id="main">
-            <h1 id="title" class="mt-5"><i class="lni lni-coffee-cup"></i> CoffeeShop</h1>
-        <div class="card ml-auto mt-auto" style="width: 18rem;">
-  <div class="card-body">
-                        <form action="" method="post">
-                            <div class="form-group">
-                                <label for="email"><h5 class="m-0"><strong>Email :</strong></h5></label>
-                                <input type="text" class="form-control" id="email">
-                            </div>
-                            <div class="form-group">
-                                <label for="password"><h5 class="m-0"><strong>Password :</strong></h5></label>
-                                <input type="password" class="form-control" id="password">
-                            </div>
-                        </form>
-  </div>
-</div>
+  <div id="container">
+    <div id="forms-container">
+      <div id="sign-in">
+        <form action="" method="post" id="sign-in-form">
+          <h2 id="title">Sign In</h2>
+          <div id="input-field">
+            <i class="lni lni-user"></i>
+            <input type="text" placeholder="Email">
+          </div>
+          <div id="input-field">
+            <i class="lni lni-lock-alt"></i>
+            <input type="password" placeholder="Password">
+          </div>
+          <button type="submit" id="btn">Login</button>
+        </form>
       </div>
     </div>
+  </div>
 </template>
-<script>
-export default {
-  components: {
-  }
-}
-</script>
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
-#main{
-  position: fixed;
-  background-image: url('../../assets/pexelsa.jpg');
-  opacity: 0.8;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  height: 100vh;
+#container{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: aquamarine ;
+  overflow: hidden;
 }
-#title, i{
-  color: #57CAD5;
-  font-size: 50px;
-  margin: 50px;
+#forms-contanier{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
-.card{
-  background-color: rgb(255, 255, 255, 0.6);
-  letter-spacing: 2px;
-  font-family: 'Didact Gothic', sans-serif;
+form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+#title{
+  font-size: 2.2rem;
+  color: rgb(104, 103, 103);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+#input-field{
+  max-width: 380px;
+  width: 100%;
+  height: 55px;
+  background-color: white;
+  margin: 10px 0;
+  border-radius: 55px;
+  display:grid;
+  grid-template-columns: 15% 85%;
+}
+#input-field i{
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+#input-field input::placeholder{
+  color: #aaa;
+  font-weight: 500;
+}
+
+#btn{
+  width: 150px;
+  height: 49px;
+  border: none;
+  border-radius: 49px;
+  cursor: pointer;
+  background-color: #518ffa;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  transition: .2s;
+}
+#btn:hover{
+  background-color: #385d9c;
 }
 </style>

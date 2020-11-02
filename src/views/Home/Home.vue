@@ -21,16 +21,11 @@
         <sidebar/>
       </div>
       <div class="col" id="product">
-        <div class="row row-cols-1 row-cols-md-3 p-0">
+    <div class="row row-cols-1 row-cols-md-3 p-0">
         <product/>
-        <product/>
-        <product/>
-        <product/>
+    </div>
         </div>
-        </div>
-      <div id="cart" class="col-auto shadow">
           <cart/>
-      </div>
       </div>
     </div>
   </div>
@@ -60,10 +55,6 @@ export default {
   margin-left: 40px;
   margin-right: 10px;
   margin-top: 30px;
-}
-#cart{
-  width: 380px;
-  background-color: white;
 }
 #count {
   margin-top: 20px;

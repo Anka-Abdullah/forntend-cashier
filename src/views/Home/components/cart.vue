@@ -1,5 +1,5 @@
 <template>
-<div>
+      <div id="cart" class="col-auto shadow">
     <div id="cartbox" class="p-3 bg-white">
         <!-- item -->
         <div class="navbar">
@@ -50,6 +50,11 @@
 </div>
 </template>
 <style scoped>
+#cart{
+  height: calc(100vh - 60px);
+  width: 380px;
+  background-color: white;
+}
 #footer{
     position: fixed;
     margin-top: 425px;
