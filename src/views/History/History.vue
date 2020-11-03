@@ -1,6 +1,6 @@
 <template>
 <div class="container-fluid bg-light">
-        <navbar :link="'/'" :icon="'lni lni-menu'" :title="'History'" :linkB="'/cashier'" :iconB="'lni lni-users'"/>
+        <navbar ::title="'History'" :link="'/cashier'" :icon="'lni lni-users'"/>
     <div class="container pt-3" style="margin-top: 60px;">
       <board class="mt-3"/>
       <dataTable class="mt-5"/>

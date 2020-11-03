@@ -3,10 +3,7 @@
     <div class="container-fluid bg-light">
       <nav class="navbar p-0 m-0">
           <navbar :width="'width: calc(100% - 380px);'"
-                  :link="{name: 'Home'}"
-                  :icon="'lni lni-menu'"
-                  :title="'Food Items'"
-                  :titleB="'Cart'" />
+                  :title="'Food Items'" />
           <nav class="navbar p-0 m-0 bg-white shadow-sm ml-auto fixed-top" id="cartnav">
             <div class="row mx-auto">
             <h3 class="m-0">Cart</h3>
@@ -21,9 +18,7 @@
         <sidebar/>
       </div>
       <div class="col" id="product">
-    <div class="row row-cols-1 row-cols-md-3 p-0">
         <product/>
-    </div>
         </div>
           <cart/>
       </div>
@@ -32,6 +27,7 @@
 </template>
 
 <script>
+// import axios from 'axios'
 import navbar from '../../components/global/navbar'
 import sidebar from './components/sidebar'
 import product from './components/product'
@@ -48,6 +44,16 @@ export default {
     return {
     }
   }
+  // methods: {
+  //   getData () {
+  //     axios.get('https://jsonplaceholder.typicode.com/photos').then((res) => {
+  //       console.log(res.data)
+  //     })
+  //   }
+  // },
+  // mounted () {
+  //   this.getData()
+  // }
 }
 </script>
 <style scoped>

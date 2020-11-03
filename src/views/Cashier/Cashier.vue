@@ -1,6 +1,6 @@
 <template>
     <div class="bg-light">
-        <navbar :link="'/'" :icon="'lni lni-menu'" :title="'Cashier'" :linkB="'/history'" :iconB="'lni lni-bar-chart'"/>
+        <navbar :title="'Cashier'" :link="'/history'" :icon="'lni lni-bar-chart'"/>
         <div class="container pt-3" style="margin-top: 60px;">
             <div class="navbar px-2 py-4 mb-2">
                 <div class="row mx-auto my-auto">
