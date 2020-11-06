@@ -26,18 +26,20 @@
             </div>
         </div>
         <!-- Modal -->
-<confirm :modalId="'delete'" :yes="'Delete'" :quetion="'Delete this product ?'"/>
-<modal :modalId="'edit'" :yes="'Edit'" :title="'Edit product'"/>
+<Confirm modalId="delete" yes="Delete" quetion="Delete this product ?"/>
+<ModalProduct modalId="edit" yes="Edit" title="Edit product"/>
     </div>
 </template>
 <script>
 import axios from 'axios'
-import modal from '../../../components/global/modal-product'
-import confirm from '../../../components/global/confirm'
+import ModalProduct from '../../../components/global/ModalProduct'
+import Confirm from '../../../components/global/Confirm'
+
 export default {
+  name: 'Product',
   components: {
-    modal,
-    confirm
+    ModalProduct,
+    Confirm
   },
   data () {
     return {

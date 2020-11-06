@@ -2,8 +2,8 @@
   <div>
     <div class="container-fluid bg-light">
       <nav class="navbar p-0 m-0">
-          <navbar :width="'width: calc(100% - 380px);'"
-                  :title="'Food Items'" />
+          <Navbar width="width: calc(100% - 380px);"
+                  title="Food Items" />
           <nav class="navbar p-0 m-0 bg-white shadow-sm ml-auto fixed-top" id="cartnav">
             <div class="row mx-auto">
             <h3 class="m-0">Cart</h3>
@@ -15,12 +15,12 @@
       </nav>
       <div class="row" style="margin-top: 60px;">
         <div class="col-auto">
-        <sidebar/>
+        <Sidebar/>
       </div>
       <div class="col" id="product">
-        <product/>
+        <Product/>
         </div>
-          <cart/>
+          <Cart/>
       </div>
     </div>
   </div>
@@ -28,32 +28,23 @@
 
 <script>
 // import axios from 'axios'
-import navbar from '../../components/global/navbar'
-import sidebar from './components/sidebar'
-import product from './components/product'
-import cart from './components/cart'
+import Navbar from '../../components/global/Navbar'
+import Sidebar from './components/Sidebar'
+import Product from './components/Product'
+import Cart from './components/Cart'
+
 export default {
   name: 'Home',
   components: {
-    navbar,
-    sidebar,
-    product,
-    cart
+    Navbar,
+    Sidebar,
+    Product,
+    Cart
   },
   data () {
     return {
     }
   }
-  // methods: {
-  //   getData () {
-  //     axios.get('https://jsonplaceholder.typicode.com/photos').then((res) => {
-  //       console.log(res.data)
-  //     })
-  //   }
-  // },
-  // mounted () {
-  //   this.getData()
-  // }
 }
 </script>
 <style scoped>

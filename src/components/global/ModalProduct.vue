@@ -53,6 +53,12 @@
 </template>
 <script>
 export default {
-  props: ['modalId', 'title', 'yes']
+  name: 'ModalProduct',
+  // props: ['modalId', 'title', 'yes']
+  props: {
+    modalId: String,
+    title: String,
+    yes: String
+  }
 }
 </script>

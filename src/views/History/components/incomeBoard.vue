@@ -31,6 +31,11 @@
              </div>
     </div>
 </template>
+<script>
+export default {
+  name: 'IncomeBoard'
+}
+</script>
 <style scoped>
 #board1 {
 border: none;

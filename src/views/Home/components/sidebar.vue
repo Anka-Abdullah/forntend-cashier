@@ -22,17 +22,17 @@
             </button>
         </div>
         <!-- Modal -->
-<confirm :modalId="'logout'" :yes="'Logout'" :quetion="'Do you want to Sign Out ?'"/>
-<modal :modalId="'addProduct'" :yes="'Add'" :title="'Add product'"/>
+<Confirm :modalId="'logout'" :yes="'Logout'" :quetion="'Do you want to Sign Out ?'"/>
+<ModalProduct :modalId="'addProduct'" :yes="'Add'" :title="'Add product'"/>
     </div>
 </template>
 <script>
-import modal from '../../../components/global/modal-product'
-import confirm from '../../../components/global/confirm'
+import ModalProduct from '../../../components/global/ModalProduct'
+import Confirm from '../../../components/global/Confirm'
 export default {
   components: {
-    modal,
-    confirm
+    ModalProduct,
+    Confirm
   }
 }
 </script>

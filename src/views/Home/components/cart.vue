@@ -49,6 +49,11 @@
 </div>
 </div>
 </template>
+<script>
+export default {
+  name: 'Cart'
+}
+</script>
 <style scoped>
 #cart{
   height: calc(100vh - 60px);

@@ -53,14 +53,15 @@
                 </div>
             </div>
         </div>
-        <confirm :modalId="'cashier'" :yes="'Delete'" :quetion="'Delete this account ?'"/>
+        <Confirm modalId="cashier" yes="Delete" quetion="Delete this account ?"/>
     </div>
 </template>
 <script>
-import confirm from '../../../components/global/confirm'
+import Confirm from '../../../components/global/Confirm'
 export default {
+  name: 'CashierCard',
   components: {
-    confirm
+    Confirm
   }
 }
 </script>

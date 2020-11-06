@@ -22,6 +22,12 @@
 </template>
 <script>
 export default {
-  props: ['modalId', 'quetion', 'yes']
+  name: 'Confirm',
+  // props: ['modalId', 'quetion', 'yes']
+  props: {
+    modalId: String,
+    quetion: String,
+    yes: String
+  }
 }
 </script>

@@ -13,19 +13,19 @@ const routes = [{
   path: '/history',
   name: 'history',
   component: () =>
-    import(/* webpackChunkName: "about" */ '../views/History/History.vue')
+    import(/* webpackChunkName: "history" */ '../views/History/History.vue')
 },
 {
   path: '/cashier',
   name: 'cashier',
   component: () =>
-    import(/* webpackChunkName: "about" */ '../views/Cashier/Cashier.vue')
+    import(/* webpackChunkName: "cashier" */ '../views/Cashier/Cashier.vue')
 },
 {
   path: '/login',
   name: 'login',
   component: () =>
-    import(/* webpackChunkName: "about" */ '../views/Login/Login.vue')
+    import(/* webpackChunkName: "login" */ '../views/Login/Login.vue')
 }
 ]
 

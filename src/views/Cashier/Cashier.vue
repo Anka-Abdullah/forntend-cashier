@@ -1,6 +1,6 @@
 <template>
     <div class="bg-light">
-        <navbar :title="'Cashier'" :link="'/history'" :icon="'lni lni-bar-chart'"/>
+        <Navbar title="Cashier" link="/history" icon="lni lni-bar-chart"/>
         <div class="container pt-3" style="margin-top: 60px;">
             <div class="navbar px-2 py-4 mb-2">
                 <div class="row mx-auto my-auto">
@@ -15,17 +15,20 @@
                     </button>
                 </div>
             </div>
-            <cashier />
-            <cashier />
-            <cashier />
-            <cashier />
-            <cashier />
-            <cashier />
-            <cashier />
-            <cashier />
-            <cashier />
-            <cashier />
-            <cashier />
+            <CashierCard />
+            <CashierCard />
+            <CashierCard />
+            <CashierCard />
+            <CashierCard />
+            <CashierCard />
+            <CashierCard />
+            <CashierCard />
+            <CashierCard />
+            <CashierCard />
+            <CashierCard />
+            <CashierCard />
+            <CashierCard />
+            <CashierCard />
         </div>
         <!-- Modal -->
         <div class="modal fade" id="staticBackdrop4" data-backdrop="static" data-keyboard="false" tabindex="-1"
@@ -70,12 +73,12 @@
     </div>
 </template>
 <script>
-import navbar from '../../components/global/navbar'
-import cashier from './components/cashiercard'
+import Navbar from '../../components/global/Navbar'
+import CashierCard from './components/CashierCard'
 export default {
   components: {
-    navbar,
-    cashier
+    Navbar,
+    CashierCard
   }
 }
 </script>

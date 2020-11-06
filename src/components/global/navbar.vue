@@ -13,6 +13,13 @@
 </template>
 <script>
 export default {
-  props: ['width', 'title', 'link', 'icon']
+  name: 'Navbar',
+  // props: ['width', 'title', 'link', 'icon']
+  props: {
+    width: String,
+    title: String,
+    link: String,
+    icon: String
+  }
 }
 </script>
